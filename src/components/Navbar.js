@@ -10,7 +10,6 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
-
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -74,17 +73,17 @@ function Navbar() {
               </li>
               <li className="nav-btn">
                 {button ? (
-                  <Link to="/login" className="btn-link">
-                    <Button buttonStyle="btn--outline">Login</Button>
+                  <Link to="/sign-up" className="btn-link">
+                    <Button buttonStyle="btn--outline">Sign Up</Button>
                   </Link>
                 ) : (
                   <Link
-                    to="/login"
+                    to="/sign-up"
                     className="btn-link"
                     onClick={closeMobileMenu}
                   >
                     <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
-                      Login
+                      Sign Up
                     </Button>
                   </Link>
                 )}
