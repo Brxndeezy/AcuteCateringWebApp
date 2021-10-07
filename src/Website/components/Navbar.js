@@ -73,17 +73,17 @@ function Navbar() {
               </li>
               <li className="nav-btn">
                 {button ? (
-                  <Link to="/sign-up" className="btn-link">
-                    <Button buttonStyle="btn--outline">Sign Up</Button>
+                  <Link to="/login" className="btn-link">
+                    <Button buttonStyle="btn--outline">Login</Button>
                   </Link>
                 ) : (
                   <Link
-                    to="/sign-up"
+                    to="/login"
                     className="btn-link"
                     onClick={closeMobileMenu}
                   >
                     <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
-                      Sign Up
+                      Login
                     </Button>
                   </Link>
                 )}
