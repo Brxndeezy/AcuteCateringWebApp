@@ -7,6 +7,9 @@ import Home from "./Website/components/pages/HomePage/Home";
 import About from "./Website/components/pages/About/About";
 import Services from "./Website/components/pages/Services/Services";
 import Contact from "./Website/components/pages/Contact/Contact";
+import Login from "./Website/components/pages/Login/Login";
+
+
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
         <Route path='/about' component={About}/>
         <Route path='/services' component={Services}/>
         <Route path='/contact' component={Contact}/>
+        <Route path='/login' component={Login}/>
       </Switch>
       <Footer />
     </Router>
