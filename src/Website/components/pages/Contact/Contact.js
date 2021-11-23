@@ -24,7 +24,7 @@ import { db } from "../../../../firebase";
         setLoader(false);
       })
       .catch((error) => {
-        alert(error.message);
+        alert("Error please enter valid details.");
         setLoader(false);
       });
 

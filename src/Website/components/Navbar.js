@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdLandscape } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Button } from "./Button";
 import "./Navbar.css";
 import { IconContext } from "react-icons/lib";
 
@@ -70,23 +69,6 @@ function Navbar() {
                 >
                   Contact
                 </Link>
-              </li>
-              <li className="nav-btn">
-                {button ? (
-                  <Link to="/login" className="btn-link">
-                    <Button buttonStyle="btn--outline">Login</Button>
-                  </Link>
-                ) : (
-                  <Link
-                    to="/login"
-                    className="btn-link"
-                    onClick={closeMobileMenu}
-                  >
-                    <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
-                      Login
-                    </Button>
-                  </Link>
-                )}
               </li>
             </ul>
           </div>
